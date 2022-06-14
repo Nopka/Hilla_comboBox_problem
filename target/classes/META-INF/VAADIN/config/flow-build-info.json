@@ -1,0 +1,18 @@
+{
+  "productionMode": false,
+  "useDeprecatedV14Bootstrapping": false,
+  "eagerServerLoad": false,
+  "npmFolder": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox",
+  "node.version": "v16.14.2",
+  "node.download.root": "https://nodejs.org/dist/",
+  "generatedFolder": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\target\\frontend",
+  "frontendFolder": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\frontend",
+  "connect.javaSourceFolder": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\src\\main\\java",
+  "javaResourceFolder": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\src\\main\\resources",
+  "connect.applicationProperties": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\src\\main\\resources\\application.properties",
+  "connect.openApiFile": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\target\\generated-resources\\openapi.json",
+  "project.frontend.generated": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\frontend\\generated",
+  "pnpm.enable": false,
+  "require.home.node": false,
+  "build.folder": "target"
+}

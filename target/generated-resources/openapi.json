@@ -1,0 +1,102 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Vaadin application",
+    "version" : "0.0.1"
+  },
+  "servers" : [ {
+    "url" : "http://localhost:8080/connect",
+    "description" : "Vaadin backend"
+  } ],
+  "tags" : [ {
+    "name" : "AppEndpoint",
+    "description" : "",
+    "x-vaadin-file-path" : "file:///C:/Users/roussill1/Documents/Dev/hilla_combobox/src/main/java/com/example/application/AppEndpoint.java"
+  } ],
+  "paths" : {
+    "/AppEndpoint/searchPersonne" : {
+      "post" : {
+        "tags" : [ "AppEndpoint" ],
+        "operationId" : "AppEndpoint_searchPersonne_POST",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "required" : [ "search" ],
+                "type" : "object",
+                "properties" : {
+                  "search" : {
+                    "type" : "string",
+                    "nullable" : true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "description" : "",
+                  "nullable" : true,
+                  "items" : {
+                    "nullable" : true,
+                    "allOf" : [ {
+                      "$ref" : "#/components/schemas/com.example.application.Personne"
+                    } ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "security" : [ {
+          "vaadin-connect-oauth2" : [ ]
+        } ]
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "com.example.application.Personne" : {
+        "type" : "object",
+        "properties" : {
+          "nom" : {
+            "type" : "string"
+          },
+          "prenom" : {
+            "type" : "string"
+          },
+          "email" : {
+            "type" : "string"
+          },
+          "displayName" : {
+            "type" : "string"
+          },
+          "nickname" : {
+            "type" : "string"
+          },
+          "appellation" : {
+            "type" : "string"
+          }
+        },
+        "x-vaadin-file-path" : "file:///C:/Users/roussill1/Documents/Dev/hilla_combobox/src/main/java/com/example/application/Personne.java"
+      }
+    },
+    "securitySchemes" : {
+      "vaadin-connect-oauth2" : {
+        "type" : "oauth2",
+        "flows" : {
+          "password" : {
+            "tokenUrl" : "/oauth/token",
+            "scopes" : { }
+          }
+        }
+      }
+    }
+  }
+}

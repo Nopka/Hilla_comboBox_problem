@@ -1,0 +1,13 @@
+{
+  "frontendFolder": "C:/Users/roussill1/Documents/Dev/hilla_combobox/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/roussill1/Documents/Dev/hilla_combobox/target/frontend",
+  "staticOutput": "C:/Users/roussill1/Documents/Dev/hilla_combobox/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "frontendBundleOutput": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "addonFrontendFolder": "target/flow-frontend/",
+  "themeName": "hilla-crm",
+  "clientServiceWorkerSource": "C:\\Users\\roussill1\\Documents\\Dev\\hilla_combobox\\target\\sw.ts",
+  "pwaEnabled": true,
+  "offlinePath": "'.'"
+}
